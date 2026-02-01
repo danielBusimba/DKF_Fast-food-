@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKF_Fast-food 🥤🍔 | Goma</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">DKF_<span>Fast-food</span> 🥤</a>
+            <div class="cart-box" id="cart-icon">
+                <i class='bx bx-shopping-bag'></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <div class="hero-text">
+            <h1>Le Goût qui fait la Différence 🍔</h1>
+            <p>Livraison rapide à Goma : Kyeshero, Himbi, Katindo...</p>
+        </div>
+    </section>
+
+    <section class="shop container">
+        <h2 class="section-title">Notre Carte</h2>
+        <div class="shop-content" id="shop-content"></div>
+    </section>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-modal">
+            <i class='bx bx-x' id="close-cart"></i>
+            <h2 class="cart-title">🛒 Ma Commande</h2>
+            
+            <div class="cart-content" id="cart-items"></div>
+
+            <div class="delivery-form">
+                <input type="text" id="client-name" placeholder="Votre Nom complet" required>
+                <select id="client-quarter" onchange="updateUI()" required>
+                    <option value="">Sélectionnez le lieu de livraison...</option>
+                    <option value="Dans le fast-food" data-fee="0">Dans le fast-food (0$)</option>
+                    <option value="Birere / Centre Ville" data-fee="1">Birere / Centre Ville (1$)</option>
+                    <option value="Office / Virunga" data-fee="1">Office / Virunga (1$)</option>
+                    <option value="Katindo / Himbi" data-fee="1">Katindo / Himbi (1$)</option>
+                    <option value="Majengo / Kihisi" data-fee="1">Majengo / Kihisi (1$)</option>
+                    <option value="Kyeshero / Mugunga" data-fee="2">Kyeshero / Mugunga (2$)</option>
+                </select>
+                <p id="error-message"></p>
+            </div>
+
+            <div id="success-msg">Commande envoyée ✅</div>
+
+            <div class="total">
+                <span style="font-size: 0.9rem; color: #aaa;">Livraison: <b id="delivery-fee">0$</b></span>
+                <span>Total: <span class="total-price">0$</span></span>
+            </div>
+
+            <button type="button" class="btn-buy" id="confirm-order">Confirmer sur WhatsApp 📱</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+    
+        <div class="copyright">© 2026 DKF_Fast-food. Goma, RDC.</div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
