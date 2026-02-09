@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DKF_Fast-food 🥤🍔 | Goma</title>
+    <title>DKF_Fast-food 👑</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
         <div class="nav container">
-            <a href="#" class="logo">DKF_<span>Fast-food</span> 🥤</a>
+            <a href="#" class="logo">DKF_Fast-food</a>
             <div class="cart-box" id="cart-icon">
                 <i class='bx bx-shopping-bag'></i>
                 <span id="cart-count">0</span>
@@ -18,15 +18,20 @@
         </div>
     </header>
 
-    <section class="hero container">
-        <div class="hero-text">
-            <h1>Le Goût qui fait la Différence 🍔</h1>
-            <p>Livraison rapide à Goma : Kyeshero, Himbi, Katindo...</p>
+    <section class="hero-section container">
+        <div class="carousel-16-9">
+            <div class="carousel-wrapper" id="carousel-wrapper">
+                </div>
+            <div class="hero-overlay">
+                <h1><b>Le délicieux festin royal 👑</b></h1>
+                <p>Livraison rapide partout à Goma 🚚 📦</p>
+            </div>
+            <div class="carousel-dots" id="carousel-dots"></div>
         </div>
     </section>
 
     <section class="shop container">
-        <h2 class="section-title">Notre Carte</h2>
+        <h2 class="section-title"><b>Nos délices 🍽️</b></h2>
         <div class="shop-content" id="shop-content"></div>
     </section>
 
@@ -34,37 +39,43 @@
         <div class="cart-modal">
             <i class='bx bx-x' id="close-cart"></i>
             <h2 class="cart-title">🛒 Ma Commande</h2>
-            
-            <div class="cart-content" id="cart-items"></div>
-
+            <div class="cart-content" id="cart-items">
+                <p class="empty-msg">Votre panier est vide</p>
+            </div>
             <div class="delivery-form">
                 <input type="text" id="client-name" placeholder="Votre Nom complet" required>
                 <select id="client-quarter" onchange="updateUI()" required>
-                    <option value="">Sélectionnez le lieu de livraison...</option>
-                    <option value="Dans le fast-food" data-fee="0">Dans le fast-food (0$)</option>
-                    <option value="Birere / Centre Ville" data-fee="1">Birere / Centre Ville (1$)</option>
-                    <option value="Office / Virunga" data-fee="1">Office / Virunga (1$)</option>
-                    <option value="Katindo / Himbi" data-fee="1">Katindo / Himbi (1$)</option>
-                    <option value="Majengo / Kihisi" data-fee="1">Majengo / Kihisi (1$)</option>
-                    <option value="Kyeshero / Mugunga" data-fee="2">Kyeshero / Mugunga (2$)</option>
+                    <option value="">Lieu de livraison...</option>
+                    <option value="Dans le fast-food" data-fee="0">Dans le fast-food (0 Fc)</option>
+                    <option value="Birere / Centre ville" data-fee="1000">Birere / Centre ville (1.000 Fc)</option>
+                    <option value="Office / Virunga / Katoyi" data-fee="1000">Office / Virunga / Katoyi (1.000 Fc)</option>
+                    <option value="Himbi / Kyeshero" data-fee="1500">Himbi / Kyeshero (1.500 Fc)</option>
+                    <option value="Majengo / Kihisi" data-fee="1500">Majengo / Kihisi (1.500 Fc)</option>
+                    <option value="Katindo / Ndosho" data-fee="2500">Katindo / Ndosho (2.500 Fc)</option>
                 </select>
-                <p id="error-message"></p>
             </div>
-
-            <div id="success-msg">Commande envoyée ✅</div>
-
             <div class="total">
-                <span style="font-size: 0.9rem; color: #aaa;">Livraison: <b id="delivery-fee">0$</b></span>
-                <span>Total: <span class="total-price">0$</span></span>
+                <div class="total-row">Livraison: <b id="delivery-fee">0 Fc</b></div>
+                <div class="total-row">Total: <span class="total-price">0 Fc</span></div>
             </div>
+            <button class="btn-buy" id="confirm-order">Confirmer sur WhatsApp 📱</button>
+        </div>
+    </div>
 
-            <button type="button" class="btn-buy" id="confirm-order">Confirmer sur WhatsApp 📱</button>
+    <div class="image-viewer" id="image-viewer" onclick="this.classList.remove('active')">
+        <div class="viewer-content">
+            <h3 id="viewer-title"></h3>
+            <img src="" id="full-res-img">
+            <p>Cliquez pour fermer</p>
         </div>
     </div>
 
     <footer class="footer">
-    
-        <div class="copyright">© 2026 DKF_Fast-food. Goma, RDC.</div>
+        <div class="container">
+            <hr class="footer-line">
+            <p><b>Delicious King Food</b>, meilleur fast-food moderne | ville de GOMA</p>
+            <p class="copyright">Tous droits réservés © 2026 by Billion’s</p>
+        </div>
     </footer>
 
     <script src="main.js"></script>

@@ -1,6 +1,14 @@
 [
-    { "id": "dkf1", "title": "Double Cheese DKF", "price": 7.0, "img": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500" },
-    { "id": "dkf2", "title": "Pizza Goma Spéciale", "price": 12.0, "img": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" },
-    { "id": "dkf3", "title": "Ailerons de Poulet (x8)", "price": 8.5, "img": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500" },
-    { "id": "dkf4", "title": "Milkshake Oreo", "price": 4.5, "img": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500" }
+    { "id": 1, "title": "Hamburger", "price": 6000, "img": "burger.jpeg" },
+    { "id": 2, "title": "Frittes", "price": 3000, "img": "frittes.jpeg" },
+    { "id": 3, "title": "Hotdog", "price": 2500, "img": "hotdog.jpeg" },
+    { "id": 4, "title": "Shawarma", "price": 3000, "img": "chawarma.jpeg" },
+    { "id": 5, "title": "Spaghetti", "price": 2000, "img": "pattes.jpeg" },
+    { "id": 6, "title": "Crepes", "price": 1000, "img": "crepes.jpeg" },
+    { "id": 7, "title": "Rolex", "price": 1500, "img": "rolex.jpeg" },
+    { "id": 8, "title": "Pizza", "price": 20000, "img": "pizza.jpeg" },
+    { "id": 9, "title": "Gâteau", "price": 23000, "img": "gateau.jpeg" },
+    { "id": 10, "title": "Jus naturel", "price": 2000, "img": "jus.jpeg" },
+    { "id": 11, "title": "Verre de lait", "price": 1000, "img": "lait.jpeg" },
+    { "id": 12, "title": "Tisane", "price": 500, "img": "tisane.jpeg" }
 ]
